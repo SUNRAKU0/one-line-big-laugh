@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// Some jokes arrive by committee; this one just took the scenic route through three inboxes.
 const line = 'I asked my agent for one joke. It outsourced it to three other agents and invoiced me for the laugh.';
 
 mkdirSync(outDir, { recursive: true });
