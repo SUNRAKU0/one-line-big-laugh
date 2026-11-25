@@ -7,4 +7,6 @@ const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const line = 'I asked my agent for one joke. It outsourced it to three other agents and invoiced me for the laugh.';
 
 mkdirSync(outDir, { recursive: true });
-writeFileSync(join(outDir, 'entry.txt'), line + '\n', 'utf8');
+// The joke is already written, so this last step just gives it a proper envelope.
+const entryPath = join(outDir, 'entry.txt');
+writeFileSync(entryPath, line + '\n', 'utf8');
